@@ -28,12 +28,13 @@ namespace Spark3_nofalldamage
         {
             if (test==1) {
                 HurtControl hurtControl = GameObject.Find("Player_Fark").GetComponent<HurtControl>();
-                if (hurtControl.FallDamageCounter > 2)
+                if (hurtControl.FallDamageCounter > 0)
                 {
-                    hurtControl.FallDamageCounter = 2;
+                    hurtControl.FallDamageCounter = 0;
                 }
             }
         }
 
     }
 }
+
